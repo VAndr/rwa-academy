@@ -26,7 +26,7 @@
           {{ t("challenge.from") }} <span class="cashback-bold">1 USDT</span>
         </div>
         <div class="date-limit">
-          {{ t("challenge.dateLimit") }}
+          {{ t("challenge.dateLimit") }} {{ formattedDeadline }}
         </div>
         <MyTimer />
       </div>
@@ -62,6 +62,7 @@ import MyButton from "@/components/kit/MyButton.vue";
 import MyTextMark from "@/components/kit/MyTextMark.vue";
 import MyTimer from "@/components/kit/MyTimer.vue";
 import i18n from "@/localization/localization.js";
+import { getFormattedDeadline } from "@/config/timer.js";
 import { computed } from "vue";
 
 const t = (key) => i18n.global.t(key);
@@ -71,6 +72,9 @@ const features = computed(() => {
     t("challenge.feature2"),
     t("challenge.feature3")
   ];
+});
+const formattedDeadline = computed(() => {
+  return getFormattedDeadline();
 });
 </script>
 
