@@ -21,4 +21,11 @@ import StructureSection from "@/components/StructureSection.vue";
   gap: 120px;
   padding-top: 120px;
 }
+
+@media (max-width: 768px) {
+  .base {
+    gap: 50px;
+    padding-top: 50px;
+  }
+}
 </style>

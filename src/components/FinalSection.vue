@@ -1,9 +1,9 @@
 <template>
   <div class="final-panel">
-    <div class="title">
+    <div class="final-title">
       {{ t("final.title") }}
     </div>
-    <div class="buttons">
+    <div class="final-buttons">
       <MyButton
           width="49%"
           :isFaded="true"
@@ -29,9 +29,30 @@ const t = (key) => i18n.global.t(key);
   padding: 34px;
   border-radius: 14px;
 }
-.buttons {
+.final-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.final-buttons {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .final-panel {
+    padding: 23px;
+  }
+  .final-title {
+    font-size: 24px;
+  }
+  .final-buttons {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .final-buttons :deep(.btn) {
+    width: 100% !important;
+  }
 }
 </style>

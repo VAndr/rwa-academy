@@ -20,6 +20,7 @@ const t = (key) => i18n.global.t(key);
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-top: 1px solid var(--separator-line-color);
   padding: 50px 0;
   font-size: 18px;
@@ -31,5 +32,16 @@ const t = (key) => i18n.global.t(key);
 .links a {
   text-decoration: underline;
   color: #55BBFE;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 0;
+    font-size: 12px;
+    letter-spacing: 0.12px;
+  }
+  .links {
+    gap: 20px;
+  }
 }
 </style>

@@ -25,7 +25,6 @@ const t = (key) => i18n.global.t(key);
 .timer {
   display: flex;
   justify-content: center;
-
   width: 360px;
   border: 1px solid #56576E;
   border-radius: 12px;
@@ -35,7 +34,6 @@ const t = (key) => i18n.global.t(key);
 .digits {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   color: #B9C6F7;
   text-align: center;
 }
@@ -44,5 +42,14 @@ const t = (key) => i18n.global.t(key);
 }
 .explain {
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .timer {
+    width: 100%;
+  }
+  .indicator {
+    font-size: 36px;
+  }
 }
 </style>
