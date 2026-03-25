@@ -4,7 +4,10 @@
     "howItWorks": "How It Works",
     "faq": "FAQ",
     "myAccount": "My Account",
-    "button": "Start course"
+    "button": "Start course",
+    "menu": "Menu",
+    "signIn": "Sign in",
+    "registration": "Registration"
   },
   "challenge": {
     "complete": "Complete the Course",
