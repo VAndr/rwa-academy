@@ -1,0 +1,28 @@
+:root {
+    --background-color: #0E1117;
+    --text-color: #ffffff;
+    --button-background: linear-gradient(156.34deg, #1357DB 73.82%, #53D3F7 108.58%);
+    --separator-line-color: #1A1F2A;
+}
+
+html[data-theme='light'] {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #2B79B8;
+    --separator-line-color: #E3E3E3;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.title {
+    font-size: 30px;
+}

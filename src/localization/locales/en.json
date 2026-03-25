@@ -1,0 +1,70 @@
+{
+  "header": {
+    "structure": "Course Structure",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "myAccount": "My Account",
+    "button": "Start course"
+  },
+  "challenge": {
+    "complete": "Complete the Course",
+    "in": "in",
+    "time": "30 minutes",
+    "forFree": "for Free",
+    "understand": "Understand RWA, blockchain and smart contracts in simple language.",
+    "feature1": "No trading",
+    "feature2": "No hype",
+    "feature3": "No confusion",
+    "cashback": "Get 10% cashback",
+    "firstInvest": "on your first investment",
+    "from": "from",
+    "dateLimit": "Offer valid until 03 Mar",
+    "button": "Start Now"
+  },
+  "timer": {
+    "days": "Days",
+    "hours": "Hours",
+    "min": "Min"
+  },
+  "belief": {
+    "title": "Most People Confuse Trading with Investing",
+    "scare1": "Charts",
+    "scare2": "Speculation",
+    "scare3": "Signals",
+    "scare4": "Noise",
+    "youGet": "What You Get in 30 Minutes",
+    "know1": "✓ Understand what investment really is",
+    "know2": "✓ Understand why blockchain was created",
+    "know3": "✓ Distinguish value from speculation"
+  },
+  "structure": {
+    "title": "Course Structure",
+    "lesson": "Lesson",
+    "compound1": "14 Short Lessons",
+    "compound2": "Video + Test",
+    "compound3": "Step-by-Step Logic",
+    "lesson1": "What Investment Really Is",
+    "lesson2": "Why Blockchain Was Created",
+    "lesson3": "The Old System: Intermediaries and Trust",
+    "lesson4": "The Old System: Access and Limitations",
+    "lesson5": "What Blockchain Actually Is",
+    "lesson6": "What Blockchain Really Solves",
+    "lesson7": "What a Token Really Is",
+    "lesson8": "Why a Token Is Not Loyalty Points",
+    "lesson9": "Why Exchanges Exist",
+    "lesson10": "What Really Happens on an Exchange",
+    "lesson11": "What Tokenization Means",
+    "lesson12": "What RWA Really Is",
+    "lesson13": "Risks and Common Sense",
+    "lesson14": "Practice: Participation as Learning"
+  },
+  "final": {
+    "title": "Final Step",
+    "btnLeft": "Get Achievement",
+    "btnRight": "Reinforce Through Practice ($1)"
+  },
+  "footer": {
+    "legal": "Legal",
+    "disclaimer": "Disclaimer"
+  }
+}
