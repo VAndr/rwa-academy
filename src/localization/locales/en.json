@@ -68,6 +68,28 @@
     "btnLeft": "Get Achievement",
     "btnRight": "Reinforce Through Practice ($1)"
   },
+  "light": {
+    "heroSubtitle": "and Gain the Skill of Smart Investing",
+    "noFeatures": "No trading. No hype. No confusion.",
+    "aboutTitle": "What This Course Is About",
+    "aboutDesc": "This course explains what investment really means, why blockchain appeared, and how digital participation works. Clear logic. No noise.",
+    "step1": "Consumption",
+    "step2": "Investment",
+    "step3": "Participation",
+    "howTitle": "How It Works",
+    "how1": "14 short lessons",
+    "how2": "Video + Test",
+    "how3": "Step-by-step logic",
+    "how4": "~2 hour total",
+    "getTitle": "What You Get",
+    "get1": "Understand what investment really is",
+    "get2": "Understand why blockchain was created",
+    "get3": "Make a conscious first step",
+    "get4": "Distinguish value from speculation",
+    "optionA": "Option A — Get Achievement",
+    "optionB": "Option B — Reinforce Through Practice ($1)",
+    "disclaimer": "This course is educational and does not constitute financial advice."
+  },
   "footer": {
     "legal": "Legal",
     "disclaimer": "Disclaimer",
