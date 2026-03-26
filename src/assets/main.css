@@ -3,19 +3,60 @@
     --text-color: #ffffff;
     --button-background: linear-gradient(156.34deg, #1357DB 73.82%, #53D3F7 108.58%);
     --separator-line-color: #1A1F2A;
+
+    /* Component-level variables */
+    --card-bg: transparent;
+    --card-border: #56576E;
+    --tag-bg: #12161F;
+    --tag-color: #FBFCFF;
+    --timer-bg: linear-gradient(180deg, #222435 0%, #111320 100%);
+    --timer-border: #56576E;
+    --timer-color: #B9C6F7;
+    --lesson-index-bg: #2B79B8;
+    --lesson-index-color: #fff;
+    --faq-card-bg: #111520;
+    --faq-card-border: #1e2330;
+    --mobile-menu-bg: #0E1117;
+    --mobile-menu-link-border: #1A1F2A;
+    --dropdown-btn-bg: linear-gradient(180deg, #222435 0%, #111320 100%);
+    --dropdown-btn-border: #56576E;
+    --lessons-expanded-border: #1A1F2A;
+    --not-smart-color: #ffffff;
+    --description-color: #ffffff;
 }
 
 html[data-theme='light'] {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --button-background: #2B79B8;
-    --separator-line-color: #E3E3E3;
+    --background-color: #F5F6FA;
+    --text-color: #0E1117;
+    --button-background: linear-gradient(156.34deg, #1357DB 73.82%, #53D3F7 108.58%);
+    --separator-line-color: #D8DCE8;
+
+    /* Component-level overrides */
+    --card-bg: #FFFFFF;
+    --card-border: #D8DCE8;
+    --tag-bg: #EEF0F8;
+    --tag-color: #1A1F2A;
+    --timer-bg: linear-gradient(180deg, #E8EAF4 0%, #F0F2FA 100%);
+    --timer-border: #C8CCDC;
+    --timer-color: #1357DB;
+    --lesson-index-bg: #1357DB;
+    --lesson-index-color: #fff;
+    --faq-card-bg: #FFFFFF;
+    --faq-card-border: #D8DCE8;
+    --mobile-menu-bg: #F5F6FA;
+    --mobile-menu-link-border: #D8DCE8;
+    --dropdown-btn-bg: linear-gradient(180deg, #E8EAF4 0%, #F0F2FA 100%);
+    --dropdown-btn-border: #C8CCDC;
+    --lessons-expanded-border: #D8DCE8;
+    --not-smart-color: #0E1117;
+    --description-color: #1A1F2A;
 }
 
 body {
     background: var(--background-color);
     color: var(--text-color);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 a {
@@ -25,4 +66,130 @@ a {
 
 .title {
     font-size: 30px;
+}
+
+/* ── Light theme global component overrides ── */
+/* Using !important to override scoped Vue component styles */
+
+/* Cards */
+html[data-theme='light'] .confuse-card,
+html[data-theme='light'] .you-get-card,
+html[data-theme='light'] .final-panel {
+    background: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+}
+
+html[data-theme='light'] .time-panel {
+    background: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+}
+
+html[data-theme='light'] .structure-card {
+    background: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+}
+
+/* Tag / scare items */
+html[data-theme='light'] .scare-item,
+html[data-theme='light'] .know-item {
+    background: var(--tag-bg) !important;
+    color: var(--tag-color) !important;
+}
+
+/* Lesson dropdown button */
+html[data-theme='light'] .lessons-toggle {
+    background: var(--dropdown-btn-bg) !important;
+    border-color: var(--dropdown-btn-border) !important;
+    color: var(--text-color) !important;
+}
+
+html[data-theme='light'] .lessons-toggle svg path {
+    stroke: var(--text-color) !important;
+}
+
+/* Lesson index badge */
+html[data-theme='light'] .lesson-index {
+    background-color: var(--lesson-index-bg) !important;
+    color: var(--lesson-index-color) !important;
+}
+
+html[data-theme='light'] .lesson-block {
+    border-bottom-color: var(--separator-line-color) !important;
+}
+
+/* Timer */
+html[data-theme='light'] .timer {
+    background: var(--timer-bg) !important;
+    border-color: var(--timer-border) !important;
+}
+
+html[data-theme='light'] .digits {
+    color: var(--timer-color) !important;
+}
+
+/* FAQ cards */
+html[data-theme='light'] .faq-card {
+    background: var(--faq-card-bg) !important;
+    border-color: var(--faq-card-border) !important;
+}
+
+html[data-theme='light'] .faq-question,
+html[data-theme='light'] .faq-answer {
+    color: var(--text-color) !important;
+}
+
+/* Mobile menu overlay */
+html[data-theme='light'] .mobile-menu {
+    background: var(--mobile-menu-bg) !important;
+}
+
+html[data-theme='light'] .mobile-menu__header {
+    border-bottom-color: var(--mobile-menu-link-border) !important;
+}
+
+html[data-theme='light'] .mobile-menu__link {
+    color: var(--text-color) !important;
+    border-bottom-color: var(--mobile-menu-link-border) !important;
+}
+
+html[data-theme='light'] .mobile-menu__link:first-child {
+    border-top-color: var(--mobile-menu-link-border) !important;
+}
+
+html[data-theme='light'] .mobile-menu__btn--ghost {
+    background: var(--card-bg) !important;
+    border-color: var(--card-border) !important;
+    color: var(--text-color) !important;
+}
+
+/* Burger / close icon strokes */
+html[data-theme='light'] .burger-btn svg path,
+html[data-theme='light'] .close-btn svg path {
+    stroke: var(--text-color) !important;
+}
+
+/* Hero */
+html[data-theme='light'] .hero-in,
+html[data-theme='light'] .hero-dash {
+    color: var(--text-color) !important;
+}
+
+/* Belief not-smart text */
+html[data-theme='light'] .not-smart-text {
+    color: var(--not-smart-color) !important;
+}
+
+/* Description text */
+html[data-theme='light'] .description-text {
+    color: var(--description-color) !important;
+}
+
+/* card-title in belief */
+html[data-theme='light'] .card-title {
+    color: var(--text-color) !important;
+}
+
+/* Structure title */
+html[data-theme='light'] .structure-title {
+    color: var(--text-color) !important;
 }

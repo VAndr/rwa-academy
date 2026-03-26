@@ -1,204 +1,149 @@
 <template>
-  <div class="home-container">
-    <!-- Section heading -->
-    <h1 class="home-title">How It Works</h1>
-    <p class="home-subtitle">A simple step-by-step learning flow</p>
+  <div class="faq-container">
+    <h1 class="faq-title">FAQ</h1>
 
-    <!-- Steps cards -->
-    <div class="steps-grid">
-      <div
-          v-for="step in steps"
-          :key="step.number"
-          class="step-card"
-      >
-        <!-- Watermark number -->
-        <span class="step-number">{{ step.number }}</span>
+    <ul class="faq-list">
+      <li v-for="(item, index) in faqs" :key="index" class="faq-card">
+        <h2 class="faq-question">{{ item.question }}</h2>
+        <p class="faq-answer">{{ item.answer }}</p>
+      </li>
+    </ul>
 
-        <!-- Step title -->
-        <h2 class="step-title">{{ step.title }}</h2>
-
-        <!-- Step description -->
-        <p class="step-description">{{ step.description }}</p>
-      </div>
+    <div class="faq-cta">
+      <a href="#" class="faq-chat-btn">
+        Chat with us
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 6H17M17 6L12 1M17 6L12 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
-
-    <!-- Apply section -->
-    <div class="apply-section">
-      <h2 class="apply-title">Apply What You Learned</h2>
-      <p class="apply-text">
-        Take a small practical step starting from $1 and see how it works in reality.
-      </p>
-    </div>
-
-    <!-- CTA Button -->
-    <button class="cta-button">
-      <span class="cta-text">Start Course</span>
-      <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 7H20M20 7L14 1M20 7L14 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
   </div>
 </template>
 
 <script setup>
-
-const steps= [
+const faqs = [
   {
-    number: '01',
-    title: 'Watch Short Lessons',
-    description: 'Each lesson takes 2–3 minutes and explains one idea in simple terms.',
+    question: 'What is this course about?',
+    answer: 'This course explains the basics of investment, blockchain, tokenization and RWA in simple language. It is designed for people with no prior technical background.',
   },
   {
-    number: '02',
-    title: 'Take a Quick Test',
-    description: 'After each lesson, answer a few questions to confirm your understanding.',
+    question: 'How long does it take?',
+    answer: 'The full course takes about 30 minutes. It consists of 14 short lessons with video and test format.',
   },
   {
-    number: '03',
-    title: 'Track Your Progress',
-    description: "See how many lessons you've completed and how much is left.",
+    question: 'Do I need prior knowledge?',
+    answer: 'No. The course is made for beginners and uses simple examples instead of technical explanations.',
   },
   {
-    number: '04',
-    title: 'Unlock Your Achievement',
-    description: 'Complete all tests to unlock your course achievement.',
+    question: 'Is it really free?',
+    answer: 'Yes. The course itself is free to complete. A separate $1 practice step is optional and comes after learning.',
+  },
+  {
+    question: 'What happens after the course?',
+    answer: 'After finishing the lessons, the user can pass the final test and unlock the course achievement, or try the optional $1 practice step.',
+  },
+  {
+    question: 'What is the $1 practice step?',
+    answer: 'It is a small practical action designed to reinforce understanding. It is presented as a learning step, not as pressure to invest.',
   },
 ]
 </script>
 
 <style scoped>
-* {
-  box-sizing: border-box;
-  margin: 0;
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.faq-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.home-container {
-  max-width: 768px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 40px 24px;
+.faq-card {
+  border: 1px solid #1e2330;
+  border-radius: 14px;
+  padding: 20px 22px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 14px;
+  background: #111520;
 }
 
-.home-title {
-  color: #ffffff;
+.faq-question {
+  color: #fff;
+  font-size: 17px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 135%;
-  margin-bottom: 16px;
+  line-height: 1.4;
 }
 
-.home-subtitle {
-  color: #ffffff;
-  font-size: 18px;
+.faq-answer {
+  color: #fff;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 145%;
-  margin-bottom: 16px;
-}
-
-/* Steps grid */
-.steps-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.step-card {
-  position: relative;
-  border: 1px solid #1D6CE4;
-  border-radius: 12px;
-  padding: 36px 23px 23px 38px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.step-number {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  color: #36395E;
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 145%;
-  user-select: none;
-}
-
-.step-title {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 145%;
-}
-
-.step-description {
-  color: #FBFCFF;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-/* Apply section */
-.apply-section {
-  margin-top: 16px;
-}
-
-.apply-title {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 135%;
-  margin-bottom: 16px;
-}
-
-.apply-text {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 145%;
-}
-
-/* CTA Button */
-.cta-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  padding: 18px 40px;
-  border-radius: 12px;
-  background: linear-gradient(156deg, #1357DB 73.82%, #53D3F7 108.58%);
-  box-shadow:
-      0 4px 34.5px rgba(18, 86, 218, 0.5),
-      0 -2px 4px rgba(132, 241, 255, 0.54) inset,
-      -2px 2px 4.8px #55BBFE inset;
-  border: none;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 135%;
-  cursor: pointer;
-  transition: opacity 200ms ease;
-}
-
-.cta-button:hover {
-  opacity: 0.9;
-}
-
-.cta-button:active {
+  line-height: 1.6;
   opacity: 0.8;
 }
 
-.cta-text {
-  font-weight: 500;
+.faq-cta {
+  padding-top: 10px;
 }
 
-.cta-button svg {
-  width: 21px;
-  height: 14px;
-  flex-shrink: 0;
+.faq-chat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 14px;
+  background: linear-gradient(156deg, #1357db 73.82%, #53d3f7 108.58%);
+  box-shadow:
+    0 4px 34.5px rgba(18, 86, 218, 0.5),
+    0 -2px 4px rgba(132, 241, 255, 0.54) inset,
+    -2px 2px 4.8px #55bbfe inset;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.faq-chat-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 24px;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
+  .faq-card {
+    padding: 18px;
+  }
+}
+
+@media (min-width: 769px) {
+  .faq-question {
+    font-size: 18px;
+  }
+  .faq-answer {
+    font-size: 15px;
+  }
 }
 </style>

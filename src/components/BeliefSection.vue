@@ -1,28 +1,33 @@
 <template>
-  <div class="belief-main">
-    <div class="left">
-      <div class="title">
+  <div class="belief-layout">
+    <div class="confuse-card">
+      <div class="card-title">
         {{ t("belief.title") }}
       </div>
-      <div class="scare">
+      <div class="scares-grid">
         <div
             v-for="(scare, index) in scares"
             :key="index"
-            class="panel center"
+            class="scare-item"
         >
           {{ scare }}
         </div>
       </div>
     </div>
-    <div class="right">
-      <div class="title">
+
+    <div class="not-smart-text">
+      {{ t("belief.notSmart") }}
+    </div>
+
+    <div class="you-get-card">
+      <div class="card-title">
         {{ t("belief.youGet") }}
       </div>
-      <div class="know">
+      <div class="knows-list">
         <div
             v-for="(know, index) in knows"
             :key="index"
-            class="panel"
+            class="know-item"
         >
           {{ know }}
         </div>
@@ -54,40 +59,90 @@ const knows = computed(() => {
 </script>
 
 <style scoped>
-.belief-main {
+.belief-layout {
   display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
-.left {
+
+/* Left column — confuse card */
+.confuse-card {
   width: 50%;
   border: 1px solid #56576E;
   border-radius: 14px;
   padding: 30px;
 }
-.scare {
-  margin-top: 30px;
+
+/* Right column — you-get card */
+.you-get-card {
+  width: 50%;
+  border: 1px solid #56576E;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 24px;
+}
+
+.scares-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px
+  gap: 14px;
 }
-.center {
+
+.scare-item {
+  padding: 18px;
+  background: #12161F;
+  border-radius: 10px;
+  font-size: 14px;
   text-align: center;
+  color: #FBFCFF;
 }
-.panel {
-  padding: 25px;
-  background-color: #1F202D;
-  border-radius: 15px;
-  font-size: 20px;
-}
-.right {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.know {
-  margin-top: 40px;
+
+.knows-list {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.know-item {
+  padding: 18px;
+  background: #12161F;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #FBFCFF;
+}
+
+/* Hidden on desktop */
+.not-smart-text {
+  display: none;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .belief-layout {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .confuse-card,
+  .you-get-card {
+    width: 100%;
+  }
+
+  .not-smart-text {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.35;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
 }
 </style>
