@@ -199,50 +199,11 @@
       <h2 class="lp-section-title">{{ t("light.aboutTitle") }}</h2>
       <p class="lp-about__desc">{{ t("light.aboutDesc") }}</p>
       <div class="lp-about__flow">
-        <div class="lp-flow-item">
-          <div class="lp-illus lp-illus--sm">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="15" y="20" width="50" height="40" rx="6" fill="#E8ECF8" stroke="#C8D0E8" stroke-width="1.5"/>
-              <rect x="22" y="28" width="36" height="4" rx="2" fill="#B0BCE4"/>
-              <rect x="22" y="36" width="28" height="4" rx="2" fill="#C8D0E8"/>
-              <rect x="22" y="44" width="32" height="4" rx="2" fill="#C8D0E8"/>
-              <rect x="10" y="18" width="6" height="44" rx="3" fill="#C8D0E8"/>
-            </svg>
-          </div>
-          <span class="lp-flow-item__label">{{ t("light.step1") }}</span>
-        </div>
-        <svg class="lp-about__arrow" width="40" height="20" viewBox="0 0 40 20" fill="none">
-          <path d="M0 10H36M36 10L28 3M36 10L28 17" stroke="#C0C8E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="lp-flow-item">
-          <div class="lp-illus lp-illus--sm">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="15" y="15" width="50" height="50" rx="25" fill="#E8ECF8" stroke="#C8D0E8" stroke-width="1.5"/>
-              <path d="M25 50 L33 38 L42 44 L52 28" stroke="#7B9EDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="52" cy="28" r="4" fill="#1357DB"/>
-            </svg>
-          </div>
-          <span class="lp-flow-item__label">{{ t("light.step2") }}</span>
-        </div>
-        <svg class="lp-about__arrow" width="40" height="20" viewBox="0 0 40 20" fill="none">
-          <path d="M0 10H36M36 10L28 3M36 10L28 17" stroke="#C0C8E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="lp-flow-item">
-          <div class="lp-illus lp-illus--sm">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="40" r="10" fill="#B8C6E8" stroke="#9AAEE0" stroke-width="1.5"/>
-              <circle cx="18" cy="22" r="7" fill="#D0D8F0" stroke="#C0CBE8" stroke-width="1"/>
-              <circle cx="62" cy="22" r="7" fill="#D0D8F0" stroke="#C0CBE8" stroke-width="1"/>
-              <circle cx="18" cy="58" r="7" fill="#D0D8F0" stroke="#C0CBE8" stroke-width="1"/>
-              <circle cx="62" cy="58" r="7" fill="#D0D8F0" stroke="#C0CBE8" stroke-width="1"/>
-              <line x1="23" y1="27" x2="34" y2="34" stroke="#B8C6E8" stroke-width="1.5"/>
-              <line x1="57" y1="27" x2="46" y2="34" stroke="#B8C6E8" stroke-width="1.5"/>
-              <line x1="23" y1="53" x2="34" y2="46" stroke="#B8C6E8" stroke-width="1.5"/>
-              <line x1="57" y1="53" x2="46" y2="46" stroke="#B8C6E8" stroke-width="1.5"/>
-            </svg>
-          </div>
-          <span class="lp-flow-item__label">{{ t("light.step3") }}</span>
-        </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F3b312007c9b04b4ba84fb713e0d7f2af%2F99370f70811b4cc5b8d12c501fe7c380?format=webp&width=1200"
+          alt="Consumption → Investment → Participation"
+          class="lp-about__flow-img"
+        />
       </div>
     </section>
 
@@ -766,28 +727,14 @@ const getItems = computed(() => [
 
 .lp-about__flow {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  justify-content: center;
 }
 
-.lp-flow-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  flex: 1;
-}
-
-.lp-flow-item__label {
-  font-size: 15px;
-  font-weight: 500;
-  color: #1A1A2E;
-  text-align: center;
-}
-
-.lp-about__arrow {
-  flex-shrink: 0;
-  opacity: 0.5;
+.lp-about__flow-img {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ── WHAT YOU GET ── */
@@ -964,13 +911,8 @@ const getItems = computed(() => [
     padding: 24px;
   }
 
-  .lp-about__flow {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .lp-about__arrow {
-    transform: rotate(90deg);
+  .lp-about__flow-img {
+    max-width: 100%;
   }
 
   .lp-illus--sm {
