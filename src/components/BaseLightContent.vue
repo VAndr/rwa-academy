@@ -153,17 +153,7 @@
         <!-- 14 short lessons -->
         <div class="lp-how-card">
           <div class="lp-how-card__icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Stack of pages -->
-              <rect x="14" y="54" width="52" height="9" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <rect x="14" y="44" width="52" height="12" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <rect x="14" y="33" width="52" height="13" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <rect x="14" y="22" width="52" height="13" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <rect x="14" y="11" width="52" height="13" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Blue bookmark tab (on 2nd from top book) -->
-              <rect x="52" y="5" width="8" height="22" rx="1.5" fill="#1357DB"/>
-              <path d="M52 24 L56 29 L60 24" fill="#1357DB"/>
-            </svg>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F3b312007c9b04b4ba84fb713e0d7f2af%2F315374b6c0c4442b89a77c03d74d122e?format=webp&width=160" alt="14 short lessons" class="lp-how-card__img"/>
           </div>
           <span class="lp-how-card__label">{{ t("light.how1") }}</span>
         </div>
@@ -174,21 +164,7 @@
         <!-- Video + Test -->
         <div class="lp-how-card">
           <div class="lp-how-card__icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Monitor/TV frame -->
-              <rect x="6" y="10" width="48" height="36" rx="6" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Play button -->
-              <path d="M22 20 L22 36 L36 28 Z" fill="#1357DB"/>
-              <!-- Checklist card (overlapping bottom-right) -->
-              <rect x="34" y="34" width="38" height="36" rx="5" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Checklist rows -->
-              <line x1="47" y1="45" x2="65" y2="45" stroke="#23243A" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="47" y1="52" x2="65" y2="52" stroke="#23243A" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="47" y1="59" x2="58" y2="59" stroke="#23243A" stroke-width="1.5" stroke-linecap="round"/>
-              <!-- Check marks -->
-              <path d="M39 41 L42 44 L46 40" stroke="#1357DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M39 48 L42 51 L46 47" stroke="#1357DB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F3b312007c9b04b4ba84fb713e0d7f2af%2Fbc533b47f58e472694c215dbf592d300?format=webp&width=160" alt="Video + Test" class="lp-how-card__img"/>
           </div>
           <span class="lp-how-card__label">{{ t("light.how2") }}</span>
         </div>
@@ -199,13 +175,7 @@
         <!-- Step-by-step logic -->
         <div class="lp-how-card">
           <div class="lp-how-card__icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Rounded square -->
-              <rect x="10" y="10" width="60" height="60" rx="15" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Bold right arrow -->
-              <path d="M22 40 H52" stroke="#1357DB" stroke-width="4.5" stroke-linecap="round"/>
-              <path d="M44 30 L56 40 L44 50" stroke="#1357DB" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F3b312007c9b04b4ba84fb713e0d7f2af%2Fa81616da1ef645fd8511613db376fcd4?format=webp&width=160" alt="Step-by-step logic" class="lp-how-card__img"/>
           </div>
           <span class="lp-how-card__label">{{ t("light.how3") }}</span>
         </div>
@@ -216,25 +186,7 @@
         <!-- ~2 hour total -->
         <div class="lp-how-card">
           <div class="lp-how-card__icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Stopwatch body circle -->
-              <circle cx="40" cy="46" r="26" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Blue arc (progress) -->
-              <path d="M40 20 A26 26 0 0 1 62.5 53" stroke="#1357DB" stroke-width="3" stroke-linecap="round"/>
-              <!-- Crown cap / stem -->
-              <rect x="34" y="12" width="12" height="9" rx="3" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Button on crown -->
-              <rect x="36" y="7" width="8" height="7" rx="2.5" fill="#F5F7FE" stroke="#23243A" stroke-width="1.5"/>
-              <!-- Side lugs -->
-              <line x1="27" y1="24" x2="21" y2="30" stroke="#23243A" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="53" y1="24" x2="59" y2="30" stroke="#23243A" stroke-width="1.5" stroke-linecap="round"/>
-              <!-- Hour hand (12→ 1 o'clock) -->
-              <line x1="40" y1="46" x2="40" y2="28" stroke="#23243A" stroke-width="2" stroke-linecap="round"/>
-              <!-- Minute hand -->
-              <line x1="40" y1="46" x2="53" y2="46" stroke="#23243A" stroke-width="2" stroke-linecap="round"/>
-              <!-- Center dot -->
-              <circle cx="40" cy="46" r="2.5" fill="#1357DB"/>
-            </svg>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F3b312007c9b04b4ba84fb713e0d7f2af%2F09b598f686794749af8794f4a39ce72d?format=webp&width=160" alt="~2 hour total" class="lp-how-card__img"/>
           </div>
           <span class="lp-how-card__label">{{ t("light.how4") }}</span>
         </div>
@@ -743,6 +695,12 @@ const getItems = computed(() => [
 .lp-how-card__icon svg {
   width: 80px;
   height: 80px;
+}
+
+.lp-how-card__img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .lp-how-card__label {
