@@ -70,6 +70,8 @@
   },
   "footer": {
     "legal": "Legal",
-    "disclaimer": "Disclaimer"
+    "disclaimer": "Disclaimer",
+    "lightTheme": "Light theme",
+    "darkTheme": "Dark theme"
   }
 }
